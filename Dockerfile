@@ -150,6 +150,8 @@ WORKDIR /app
 # Set environment variable for Whisper cache
 ENV WHISPER_CACHE_DIR="/app/whisper_cache"
 
+ENV COQUI_TOS_AGREED=1
+
 # Create cache directory
 RUN mkdir -p ${WHISPER_CACHE_DIR} && chmod 777 ${WHISPER_CACHE_DIR}
 
